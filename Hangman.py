@@ -9,11 +9,14 @@ def maymay(letter, word, arr):
 	return arr
 
 wordBank=["test1","test2","test3"]#Add an option to allow user to use word bank or use own word
-wrd=(wordBank[randint(0,len(wordBank)-1)])
+if(input('Do you want to use your own word? Y/N\n')=="Y"):
+	wrd=input('Enter your word\n')
+else:
+	wrd=(wordBank[randint(0,len(wordBank)-1)])
 arr=["_"]*(len(wrd))
 tries=5
 while(tries!=0):#Break if they guess word
-	choice=input('Enter a letter')
+	choice=input("Enter a letter\n")
 	tries-=1
 	arr=maymay(choice,wrd,arr)
 	print(arr)
