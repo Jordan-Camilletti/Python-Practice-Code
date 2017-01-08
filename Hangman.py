@@ -2,12 +2,18 @@
 
 from random import randint
 
-wordBank=["test1","test2","test3"]
-word=(wordBank[randint(0,len(wordBank)-1)])
-tries=6
-while(tries!=0):
-	tries-=1
-	str=""
+def maymay(letter, word, arr):
 	for x in range(len(word)):
-		str+="_"
-	print(str)
+		if(letter==word[x]):
+			arr[x]=letter
+	return arr
+
+wordBank=["test1","test2","test3"]
+wrd=(wordBank[randint(0,len(wordBank)-1)])
+arr=["_"]*(len(wrd))
+tries=5
+while(tries!=0):
+	choice=input('Enter a letter')
+	tries-=1
+	arr=maymay(choice,wrd,arr)
+	print(arr)
