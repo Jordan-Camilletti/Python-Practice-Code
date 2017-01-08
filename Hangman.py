@@ -30,7 +30,8 @@ while(tries!=0):
 			tries+=1
 			break
 	print(arr," tries left:", tries)
-	if(!containt("_",arr)):
+	if(containt("_",arr)==False):
 		print("You win!")
 		break
-print("You lose!")
+if(tries==0):
+	print("You lose!")
