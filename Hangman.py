@@ -29,7 +29,7 @@ while(tries!=0):
 		if x==choice:
 			tries+=1
 			break
-	print(arr," tries left:", tries)
+	print(arr," ",tries," try/tries left.")
 	if(containt("_",arr)==False):
 		print("You win!")
 		break
