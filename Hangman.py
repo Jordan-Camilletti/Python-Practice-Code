@@ -17,4 +17,4 @@ while(tries!=0):#Break if they guess word
 	tries-=1
 	arr=maymay(choice,wrd,arr)
 	print(arr)
-#Create win/loss message
+#Create a win/loss message
