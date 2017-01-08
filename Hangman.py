@@ -8,7 +8,7 @@ def maymay(letter, word, arr):
 			arr[x]=letter
 	return arr
 
-wordBank=["test1","test2","test3"]#Add an option to allow user to use word bank or use own word
+wordBank=["test1","test2","test3"]
 if(input('Do you want to use your own word? Y/N\n')=="Y"):
 	wrd=input('Enter your word\n')
 else:
@@ -19,5 +19,9 @@ while(tries!=0):#Break if they guess word
 	choice=input("Enter a letter\n")
 	tries-=1
 	arr=maymay(choice,wrd,arr)
-	print(arr)
+	for x in arr:
+		if x==choice:
+			tries+=1
+			break
+	print(arr," tries left:", tries)
 #Create a win/loss message
