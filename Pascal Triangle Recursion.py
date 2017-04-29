@@ -1,5 +1,4 @@
-"""
-"""
+"""this is an upside down pascal triangle done using recursion only"""
 
 def tri(topLevel, currLevel, triangle):
 	triangle=triangle+"*"
