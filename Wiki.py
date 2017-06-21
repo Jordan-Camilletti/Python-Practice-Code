@@ -30,10 +30,10 @@ for x in range(len(line)):
 					newWrd=""
 			except IndexError:
 				print(lnk)
-				break
 				lnk_found=True
-		if(lnk_found):
-			break
+				break
+	if(lnk_found):
+		break
 
 print(route)
 
