@@ -1,16 +1,14 @@
-"""
-"""
+"""This plays a game based on the notion that all 1st links on wikipedia lead to https://en.wikipedia.org/wiki/Philosophy
+https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy this is a page better explaining the game"""
 
 import webbrowser
 import urllib.request
 print("Enter starting prompt")
 prompt=input()
 route=[]
-while(prompt!="Philosophy"):
+while(prompt!="Philosophy" and prompt!="Philosophical"):
 	route.append(prompt)
 	url="https://en.wikipedia.org/wiki/"+prompt
-	if(url=="https://en.wikipedia.org/wiki/Philosophy"):
-		break
 	prompt=""
 	lnk_found=False
 	webbrowser.open(url)
