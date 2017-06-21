@@ -3,6 +3,8 @@ https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy this is a page bet
 
 import webbrowser
 import urllib.request
+print("Do you want the wiki pages to open?(Y/N)")
+open_page=input()
 print("Enter starting prompt")
 prompt=input()
 route=[]
@@ -11,7 +13,8 @@ while(prompt!="Philosophy" and prompt!="Philosophical"):
 	url="https://en.wikipedia.org/wiki/"+prompt
 	prompt=""
 	lnk_found=False
-	webbrowser.open(url)
+	if(open_page=="Y"):
+		webbrowser.open(url)
 	page=urllib.request.urlopen(url)
 	while(page.readline() or lnk_found==False):
 		lne=page.readline()
