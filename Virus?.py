@@ -1,6 +1,5 @@
 """I guess this could be classified as a very basic virus
-DO NOT run this on anything other than a virtual machine
-Even on a virtual machine, I still wouldn't want to run this
+DO NOT run this on anything unless you want your search history ruined
 Finding all of this content probably put me on so many watchlists."""
 
 import webbrowser
