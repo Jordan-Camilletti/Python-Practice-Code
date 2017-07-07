@@ -4,7 +4,7 @@ Even on a virtual machine, I still wouldn't want to run this
 Finding all of this content probably put me on so many watchlists."""
 
 import webbrowser
-webbrowser.open("www.google.com")
+webbrowser.open_new("www.google.com")
 imgurUrls=["0CUFPuU.gifv","4JeXPYL.jpg","OUnesDL.jpg","Iq2CH.jpg","dD7yNfY.jpg","a/GRqUA","pKZCq.jpg","EaZSYU1.gifv","LdRVqSL.jpg","tbB9ktj.jpg","GRd85Vc.jpg"]
 redditUrls=["84yqig40xm7z.png"]
 youtubeUrls=["watch?v=19eFnrSf41A&feature=youtu.be&t=5m39s"]
