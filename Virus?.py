@@ -4,6 +4,7 @@ Even on a virtual machine, I still wouldn't want to run this
 Finding all of this content probably put me on so many watchlists."""
 
 import webbrowser
+import time
 from random import randint
 imgurUrls=["0CUFPuU.gifv","4JeXPYL.jpg","OUnesDL.jpg","Iq2CH.jpg","dD7yNfY.jpg","a/GRqUA","pKZCq.jpg","EaZSYU1.gifv","LdRVqSL.jpg","tbB9ktj.jpg","GRd85Vc.jpg"]
 redditUrls=["84yqig40xm7z.png"]
@@ -27,3 +28,4 @@ for n in range(100):
 	elif(page==4):#other, no link header
 		link=otherUrls[randint(0,len(otherUrls)-1)]
 		webbrowser.open(link)
+	time.sleep(1)
