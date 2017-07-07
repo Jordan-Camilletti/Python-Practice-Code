@@ -13,17 +13,17 @@ otherUrls=["http://33.media.tumblr.com/5743e899731d3604cfbc1871ef64f9dc/tumblr_n
 for n in range(100):
 	page=randint(0,4)
 	if(page==0):#https://i.imgur.com/
-		link=randint(0,len(imgurUrls)-1)
+		link=imgurUrls[randint(0,len(imgurUrls)-1)]
 		webbrowser.open("https://i.imgur.com/"+link)
 	elif(page==1):#https://i.redd.it/
-		link=randint(0,len(redditUrls)-1)
+		link=redditUrls[randint(0,len(redditUrls)-1)]
 		webbrowser.open("https://i.redd.it/"+link)
 	elif(page==2):#https://www.youtube.com/
-		link=randint(0,len(youtubeUrls)-1)
+		link=youtubeUrls[randint(0,len(youtubeUrls)-1)]
 		webbrowser.open("https://www.youtube.com/"+link)
 	elif(page==3):#https://www.liveleak.com/
-		link=randint(0,len(liveleakUrls)-1)
+		link=liveleakUrls[randint(0,len(liveleakUrls)-1)]
 		webbrowser.open("https://www.liveleak.com/"+link)
 	elif(page==4):#other, no link header
-		link=randint(0,len(otherUrls)-1)
+		link=otherUrls[randint(0,len(otherUrls)-1)]
 		webbrowser.open(link)
