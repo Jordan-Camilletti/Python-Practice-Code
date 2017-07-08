@@ -14,19 +14,20 @@ browsers=['firefox','chrome']
 def start(slep):
 	while(True):
 		page=randint(0,4)
+		browser=browsers[randint(0,len(browsers)-1)]
 		if(page==0):#https://i.imgur.com/
 			link=imgurUrls[randint(0,len(imgurUrls)-1)]
-			webbrowser.get('firefox').open("https://i.imgur.com/"+link)
+			webbrowser.get(browser).open("https://i.imgur.com/"+link)
 		elif(page==1):#https://i.redd.it/
 			link=redditUrls[randint(0,len(redditUrls)-1)]
-			webbrowser.get('firefox').open("https://i.redd.it/"+link)
+			webbrowser.get(browser).open("https://i.redd.it/"+link)
 		elif(page==2):#https://www.youtube.com/
 			link=youtubeUrls[randint(0,len(youtubeUrls)-1)]
-			webbrowser.get('firefox').open("https://www.youtube.com/"+link)
+			webbrowser.get(browser).open("https://www.youtube.com/"+link)
 		elif(page==3):#https://www.liveleak.com/
 			link=liveleakUrls[randint(0,len(liveleakUrls)-1)]
-			webbrowser.get('firefox').open("https://www.liveleak.com/"+link)
+			webbrowser.get(browser).open("https://www.liveleak.com/"+link)
 		elif(page==4):#other, no link header
 			link=otherUrls[randint(0,len(otherUrls)-1)]
-			webbrowser.get('firefox').open(link)
+			webbrowser.get(browser).open(link)
 		time.sleep(slep)
