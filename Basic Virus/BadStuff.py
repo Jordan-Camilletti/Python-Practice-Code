@@ -13,14 +13,9 @@ otherUrls=["http://33.media.tumblr.com/5743e899731d3604cfbc1871ef64f9dc/tumblr_n
 def start(slep):
 	while(True):
 		page=randint(0,4)
-		if(page==0):#https://i.imgur.com/
-			webbrowser.open("https://i.imgur.com/"+imgurUrls[randint(0,len(imgurUrls)-1)])
-		elif(page==1):#https://i.redd.it/
-			webbrowser.open("https://i.redd.it/"+redditUrls[randint(0,len(redditUrls)-1)])
-		elif(page==2):#https://www.youtube.com/
-			webbrowser.open("https://www.youtube.com/"+youtubeUrls[randint(0,len(youtubeUrls)-1)])
-		elif(page==3):#https://www.liveleak.com/
-			webbrowser.open("https://www.liveleak.com/"+liveleakUrls[randint(0,len(liveleakUrls)-1)])
-		elif(page==4):#other, no link header
-			webbrowser.open(otherUrls[randint(0,len(otherUrls)-1)]
+		if(page==0): webbrowser.open("https://i.imgur.com/"+imgurUrls[randint(0,len(imgurUrls)-1)])
+		elif(page==1): webbrowser.open("https://i.redd.it/"+redditUrls[randint(0,len(redditUrls)-1)])
+		elif(page==2): webbrowser.open("https://www.youtube.com/"+youtubeUrls[randint(0,len(youtubeUrls)-1)])
+		elif(page==3): webbrowser.open("https://www.liveleak.com/"+liveleakUrls[randint(0,len(liveleakUrls)-1)])
+		elif(page==4): webbrowser.open(otherUrls[randint(0,len(otherUrls)-1)]
 		time.sleep(slep)
