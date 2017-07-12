@@ -8,7 +8,7 @@ from random import randint
 imgurUrls=["0CUFPuU.gifv","4JeXPYL.jpg","OUnesDL.jpg","Iq2CH.jpg","dD7yNfY.jpg","a/GRqUA","pKZCq.jpg","EaZSYU1.gifv","LdRVqSL.jpg","tbB9ktj.jpg","GRd85Vc.jpg"]
 redditUrls=["84yqig40xm7z.png"]
 youtubeUrls=["watch?v=19eFnrSf41A&feature=youtu.be&t=5m39s","watch?v=y1B8vXlH5l4?t=52s","watch?v=pP6jf9aovjM?t=9s","watch?v=vLEe9iHf-FA?t=41s","watch?v=fbngCt4BavU?t=29s","watch?v=ICUluUi6aTc?t=6s","watch?v=KjVLZLsW0do?t=3s"]
-liveleakUrls=["view?i=461_1360105026&safe_mode=off","view?i=bb4_1283184704&safe_mode=off","view?i=5e8_1425739036&safe_mode=off"]
+liveleakUrls=["view?i=01f_1470753558&safe_mode=off","view?i=461_1360105026&safe_mode=off","view?i=bb4_1283184704&safe_mode=off","view?i=5e8_1425739036&safe_mode=off"]
 otherUrls=["http://33.media.tumblr.com/5743e899731d3604cfbc1871ef64f9dc/tumblr_njk3p6hCUh1unvl7to1_500.gif","https://streamable.com/o3mic"]
 def start(slep):
 	while(True):
