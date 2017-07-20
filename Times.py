@@ -2,6 +2,8 @@
 It logs the strings and amount values in a text file called 'times.txt'"""
 
 def addTime(time,t):
+	if(time=="RESET"):
+		return []
 	for n in range(len(t)):
 		if(t[n][0]==time):
 			t[n][1]+=1
