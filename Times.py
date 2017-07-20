@@ -26,6 +26,13 @@ while(addMore=="Y"):
 	print("Add more time? Y/N")
 	addMore=input()
 print(times)
+tot=0#COMMENT OUT THIS PART IF YOU AREN'T RECORDING TIMES
+for num,amount in times:
+	if(num[-4]=="0"):
+		tot+=(int(num[-5])*600*amount)
+	else:
+		tot+=(int(num[-4])*60*amount)
+print("Total time",tot,"seconds.")#COMMENT OUT THIS PART IF YOU AREN'T RECORDING TIMES
 with open("times.txt",'w') as f:
 	for num,amount in times:
 		f.write(num+"-"+str(amount)+"~\n")
