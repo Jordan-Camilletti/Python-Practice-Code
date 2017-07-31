@@ -33,8 +33,5 @@ with open("times.txt",'w') as f:
 print(times)
 seconds=0#COMMENT OUT THIS PART IF YOU AREN'T RECORDING TIMES
 for num,amount in times:
-	if(len(num)==5):
-		seconds+=(int(num[-5:-3])*60*amount)
-	else:
-		seconds+=(int(num[-4])*60*amount)
+	seconds+=((int(num[-2:])+(int(num[:-3])*60))*amount)
 print("Total time:",seconds,"seconds or",divmod(seconds,60)[0],"minutes and",divmod(seconds,60)[1],"seconds.")#COMMENT OUT THIS PART IF YOU AREN'T RECORDING TIMES
