@@ -1,5 +1,6 @@
 """This plays a game based on the notion that all 1st links on wikipedia lead to https://en.wikipedia.org/wiki/Philosophy
-https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy this is a page better explaining the game"""
+https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy this is a page better explaining the game
+Created by Jordan Camilletti"""
 
 import webbrowser
 import urllib.request
