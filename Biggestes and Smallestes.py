@@ -1,4 +1,5 @@
-#This takes a array of numbers, 'col', and returns a list of specified length, 'num', of the biggest or smallest numbers
+"""This takes a array of numbers, 'col', and returns a list of specified length, 'num', of the biggest or smallest numbers
+Created by Jordan Camilletti"""
 
 from collections import deque
 import heapq
