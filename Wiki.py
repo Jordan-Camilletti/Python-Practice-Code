@@ -3,7 +3,7 @@ https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy this is a page bet
 Created by Jordan Camilletti"""
 
 import webbrowser
-import urllib.request
+import urllib
 print("Do you want the wiki pages to open?(Y/N)")
 open_page=input()
 print("Enter starting prompt")
