@@ -1,2 +1,7 @@
 """
 """
+
+alphaC=[]#Cipher 'alphabet'
+alphaN=[]#Normal 'alphabet'
+cipherTexts=[]
+normalTexts=[]
