@@ -14,4 +14,3 @@ while(choice.upper()!="EXIT"):
 		cText=input("Enter ciphered text")
 		nText=input("Enter ciphered text")
 	elif(choice.upper()=="OUTPUT"):
-
