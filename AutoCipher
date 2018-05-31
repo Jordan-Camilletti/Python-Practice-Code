@@ -5,3 +5,6 @@ alphaC=[]#Cipher 'alphabet'
 alphaN=[]#Normal 'alphabet'
 cipherTexts=[]
 normalTexts=[]
+choice=""
+while(choice.upper()!="EXIT"):
+	choice=input()
