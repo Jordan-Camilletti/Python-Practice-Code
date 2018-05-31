@@ -6,10 +6,12 @@ alphaN=[]#Normal 'alphabet'
 cipherTexts=[]
 normalTexts=[]
 choice=""
+cText=""
+nText=""
 while(choice.upper()!="EXIT"):
 	choice=input("Input, Output, or Exit?")
 	if(choice.upper()=="INPUT"):
-
+		cText=input("Enter ciphered text")
+		nText=input("Enter ciphered text")
 	elif(choice.upper()=="OUTPUT"):
 
-		
