@@ -7,4 +7,9 @@ cipherTexts=[]
 normalTexts=[]
 choice=""
 while(choice.upper()!="EXIT"):
-	choice=input()
+	choice=input("Input, Output, or Exit?")
+	if(choice.upper()=="INPUT"):
+
+	elif(choice.upper()=="OUTPUT"):
+
+		
