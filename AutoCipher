@@ -19,7 +19,9 @@ while(choice.upper()!="EXIT"):
             cText=input("Enter normal text.\n")
             for n in cText:
                 nText+=alphN[]
+            print(nText)
         else:
             nText=input("Enter ciphered text.\n")
             for n in nText:
                 cText+=alphC[]
+            print(cText)
