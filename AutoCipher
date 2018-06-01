@@ -9,8 +9,9 @@ choice=""
 cText=""
 nText=""
 while(choice.upper()!="EXIT"):
-	choice=input("Input, Output, or Exit?")
+	choice=input("Input, Output, or Exit?\n")
 	if(choice.upper()=="INPUT"):
-		cText=input("Enter ciphered text")
-		nText=input("Enter ciphered text")
+		cText=input("Enter ciphered text.\n")
+		nText=input("Enter normal text.\n")
 	elif(choice.upper()=="OUTPUT"):
+		choice=input("Cipher -> Normal (0)\nNormal -> Cipher(1)\n")
