@@ -14,20 +14,19 @@ while(choice.upper()!="EXIT"):
         cText=input("Enter ciphered text.\n")
         nText=input("Enter normal text.\n")
     elif(choice.upper()=="OUTPUT"):
-        choice=input("Cipher -> Normal (0)\nNormal -> Cipher(1)\n")
-        if(choice==0):
+        if(input("Cipher -> Normal (1)\nNormal -> Cipher(2)\n")=="2"):
             cText=input("Enter normal text.\n")
             for n in cText:
                 if(n in alphC):
-                    nText+=alphN[]
+                    nText+=alphN[alphC.index(n)]
                 else:
-                    nText+=""
+                    nText+="᏿"
             print(nText)
         else:
             nText=input("Enter ciphered text.\n")
             for n in nText:
                 if(n in alphN):
-                    cText+=alphC[]
+                    cText+=alphC[alphN.index(n)]
                 else:
-                    cText+=""
+                    cText+="᏿"
             print(cText)
