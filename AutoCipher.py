@@ -3,8 +3,6 @@
 
 alphC=[]#Cipher 'alphabet'
 alphN=[]#Normal 'alphabet'
-#cipherTexts=[]
-#normalTexts=[]
 choice=""
 cText=""
 nText=""
