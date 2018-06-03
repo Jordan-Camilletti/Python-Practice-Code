@@ -11,8 +11,8 @@ nText=""
 while(choice.upper()!="EXIT"):
     choice=input("Input, Output, or Exit?\n")
     if(choice.upper()=="INPUT"):
-        cText=input("Enter ciphered text.\n")
-        nText=input("Enter normal text.\n")
+        cText=input("Enter ciphered text.\n").upper()
+        nText=input("Enter normal text.\n").upper()
         for n in range(len(cText)):
         	alphC.append(cText[n])
         	alphN.append(nText[n])
