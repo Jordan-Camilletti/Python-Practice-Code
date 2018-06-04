@@ -7,14 +7,16 @@ choice=""
 cText=""
 nText=""
 while(choice.upper()!="EXIT"):
+	print(alphN)
 	print(alphC)
 	choice=input("Input, Output, or Exit?\n")
 	if(choice.upper()=="INPUT"):
 		cText=input("Enter ciphered text.\n").upper()
 		nText=input("Enter normal text.\n").upper()
 		for n in range(len(cText)):
-			alphC.append(cText[n])
-			alphN.append(nText[n])
+			if(cText[n] not in alphC):
+				alphC.append(cText[n])
+				alphN.append(nText[n])
 	elif(choice.upper()=="OUTPUT"):
 		if(input("Cipher -> Normal (1)\nNormal -> Cipher(2)\n")=="2"):
 			cText=input("Enter normal text.\n")
