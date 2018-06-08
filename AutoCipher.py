@@ -1,4 +1,4 @@
-"""This is a basic reolace letter cipher"""
+"""This is a basic replace letter cipher"""
 
 alphC=[]#Cipher 'alphabet'
 alphN=[]#Normal 'alphabet'
@@ -6,7 +6,7 @@ choice=""
 cText=""
 nText=""
 while(choice.upper()!="EXIT"):
-	print("\n",alphN,"\n",alphC)
+	print("\nNormal:",alphN,"\nCipher:",alphC)
 	choice=input("Input, Output, or Exit?\n")
 	if(choice.upper()=="INPUT"):
 		cText=input("Enter ciphered text.\n").upper()
@@ -26,7 +26,7 @@ while(choice.upper()!="EXIT"):
 					nText+="᏿"
 			print(nText)
 		else:
-			nText=input("Enter ciphered text.\n").uooer()
+			nText=input("Enter ciphered text.\n").upper()
 			cText=""
 			for n in nText:
 				if(n in alphN):
