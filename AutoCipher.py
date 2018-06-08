@@ -25,7 +25,7 @@ while(choice.upper()!="EXIT"):
 				if(n in alphC):
 					nText+=alphN[alphC.index(n)]
 				else:
-					nText+="᏿"
+					nText+="᏿"#Best thing I could find for 'unknown'
 			print(nText)
 		else:
 			nText=input("Enter normal text.\n").upper()
