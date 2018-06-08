@@ -1,4 +1,5 @@
-"""This is a basic replace letter cipher"""
+"""This is a basic replace letter cipher("A"~>"X", "B"~>"E", etc)
+It works on cipher words and their normal counterparts supplied by the user"""
 
 alphC=[]#Cipher 'alphabet'
 alphN=[]#Normal 'alphabet'
