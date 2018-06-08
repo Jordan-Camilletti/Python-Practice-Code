@@ -1,5 +1,6 @@
 """This is a basic replace letter cipher("A"~>"X", "B"~>"E", etc)
-It works on cipher words and their normal counterparts supplied by the user"""
+It works on cipher words and their normal counterparts supplied by the user
+If given enough data, it can translate ciphered and normal messages"""
 
 alphC=[]#Cipher 'alphabet'
 alphN=[]#Normal 'alphabet'
