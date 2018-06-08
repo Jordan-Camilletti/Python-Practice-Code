@@ -1,4 +1,4 @@
-"""This is a basic reolace letter cipher"""
+"""This is a basic replace letter cipher"""
 
 alphC=[]#Cipher 'alphabet'
 alphN=[]#Normal 'alphabet'
