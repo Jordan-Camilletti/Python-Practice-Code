@@ -4,3 +4,5 @@ url=
 #Starting year is 1XXX
 year=1XXX
 percents=[]
+
+while(year<2016):
