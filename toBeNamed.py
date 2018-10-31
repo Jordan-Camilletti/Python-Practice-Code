@@ -3,7 +3,7 @@
 import webbrowser
 import urllib
 
-url=
+url=https://en.wikipedia.org/wiki/...
 #Starting year is 1XXX
 year=1XXX
 percents=[]
