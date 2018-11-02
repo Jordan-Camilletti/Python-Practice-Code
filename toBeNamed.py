@@ -5,7 +5,7 @@ import urllib
 
 url=https://en.wikipedia.org/wiki/...
 #Starting year is 1XXX
-year=1XXX
+year=1782
 percents=[]
 
-while(year<2016):
+while(year<=2016):
