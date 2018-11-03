@@ -3,9 +3,10 @@
 import webbrowser
 import urllib
 
-url=https://en.wikipedia.org/wiki/United_States_presidential_election,_1792
-#Starting year is 1XXX
+#Starting year is 1792
+#The voter turnout percentage is always the first number on line 52
 year=1792
 percents=[]
 
-webbrowser.open("
+url="https://en.wikipedia.org/wiki/United_States_presidential_election,_"+str(year)
+webbrowser.open(url)
