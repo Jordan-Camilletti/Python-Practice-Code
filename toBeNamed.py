@@ -3,9 +3,9 @@
 import webbrowser
 import urllib
 
-url=https://en.wikipedia.org/wiki/...
+url=https://en.wikipedia.org/wiki/United_States_presidential_election,_1792
 #Starting year is 1XXX
-year=1782
+year=1792
 percents=[]
 
-while(year<=2016):
+webbrowser.open("
