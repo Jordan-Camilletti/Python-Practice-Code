@@ -11,7 +11,4 @@ percents=[]
 
 url="https://en.wikipedia.org/wiki/United_States_presidential_election,_"+str(year)
 #webbrowser.open(url)
-print(urllib.request.urlopen(url).readline())
-for num,line in enumerate(urllib.request.urlopen(url).readline()):
-	print(num)
-	print(test)
+print(list(enumerate(urllib.request.urlopen(url)))[51])#Gets the specific line
