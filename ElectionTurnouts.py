@@ -1,4 +1,4 @@
-"""most likely getting data from wiki script"""
+"""This is just a simple script I wrote to get the data of US election turnouts """
 
 import webbrowser
 import urllib
