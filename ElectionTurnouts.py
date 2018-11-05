@@ -6,8 +6,7 @@ from urllib.request import urlopen
 
 #Starting year is 1792
 #The voter turnout percentage is always the first number on line 52
-year=1792
-percents=[]
+percents=[11.6]#11.6% turnout in 1788-1789 election
 
 for year in range(1792,2020,4):
   url="https://en.wikipedia.org/wiki/United_States_presidential_election,_"+str(year)
