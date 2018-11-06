@@ -11,3 +11,4 @@ for year in range(1792,2020,4):#Starting year is 1792, ending year is 2016
   url="https://en.wikipedia.org/wiki/United_States_presidential_election,_"+str(year)
   #webbrowser.open(url)
   print(list(enumerate(urllib.request.urlopen(url)))[51])#Gets the specific line
+  percents.append()
