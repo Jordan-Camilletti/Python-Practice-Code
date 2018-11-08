@@ -4,6 +4,7 @@ Created by Jordan Camilletti"""
 
 import webbrowser
 import urllib
+from urllib.request import urlopen
 print("Do you want the wiki pages to open?(Y/N)")
 open_page=input()
 print("Enter starting prompt")
