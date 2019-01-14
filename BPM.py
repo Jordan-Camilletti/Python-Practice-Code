@@ -1,5 +1,5 @@
 import webbrowser
-#import urllib
+import urllib
 from urllib.request import urlopen, Request
 
 headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
@@ -9,10 +9,9 @@ headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KH
        'Accept-Language': 'en-US,en;q=0.8',
        'Connection': 'keep-alive'}
 url="https://tunebat.com/Search?q=Space+Oddity+"
-page=Request(url, headers)
-print(urlopen(page).read())
+urllib.request.urlopen(url)
+#page=Request(url, headers)
+#print(urlopen(page).read().decode('utf-8'))
 """while(page.readline()):
 	lne=page.readline()
 	print(lne)"""
-#f=urllib.request.urlopen(url)
-#print(f.read())
