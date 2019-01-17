@@ -1,7 +1,7 @@
 import webbrowser
 import urllib.request
 
-def makeNewUrl(url,song):
+def makeNewUrl(song,url="https://songbpm.com/"):
 	return("")
 
 header={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
@@ -12,7 +12,8 @@ header={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML
        'Connection': 'keep-alive'}
 song1=(input("Enter Song 1: ")).replace(" ","-").toLowerCase()
 song2=""
-url="https://songbpm.com/space-oddity?q=Space%20Oddity%20"#Using this URL to test for now
+#url="https://songbpm.com/space-oddity?q=Space%20Oddity%20"#Using this URL to test for now
+url=makeNewUrl(song1)
 BPM=0
 page=urllib.request.urlopen(urllib.request.Request(url,headers=header))
 print(page.read())
