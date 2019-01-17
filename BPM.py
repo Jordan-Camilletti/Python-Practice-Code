@@ -7,7 +7,7 @@ header={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML
        'Accept-Encoding': 'none',
        'Accept-Language': 'en-US,en;q=0.8',
        'Connection': 'keep-alive'}
-song1=input("Enter Song 1: ")
+song1=(input("Enter Song 1: ")).replace(" ","-").toLowerCase()
 song2=""
 url="https://songbpm.com/space-oddity?q=Space%20Oddity%20"#Using this URL to test for now
 BPM=0
