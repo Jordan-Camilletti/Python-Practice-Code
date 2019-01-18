@@ -12,14 +12,10 @@ header={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML
        'Connection': 'keep-alive'}
 song1=input("Enter Song 1: ").lower()
 song2=""
+BPM=0
 #url="https://songbpm.com/space-oddity?q=Space%20Oddity%20"#Using this URL to test for now
 url=makeNewUrl(song1)
-BPM=0
-page=urllib.request.urlopen(urllib.request.Request(url,headers=header))
-print(page.read())
-#with page.read() as pge:
-#	BPM=
-
-#urllib.request.urlopen(url)
-#page=Request(url, headers)
-#print(urlopen(page).read().decode('utf-8'))
+pageBytes=urllib.request.urlopen(urllib.request.Request(url,headers=header))
+page=pageBytes.read().decode("utf8")
+pageBytes.close()
+print(page[0])
