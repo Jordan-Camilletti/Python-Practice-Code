@@ -2,7 +2,8 @@ import webbrowser
 import urllib.request
 
 def makeNewUrl(song,url="https://songbpm.com/"):
-	return("https://songbpm.com/space-oddity?q=Space%20Oddity%20")
+	baseURL="https://songbpm.com/"+(song.lower())
+	return("https://songbpm.com/bohemian-rhapsody?q=Bohemian%20Rhapsody")
 
 header={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -16,6 +17,6 @@ BPM=0
 #url="https://songbpm.com/space-oddity?q=Space%20Oddity%20"#Using this URL to test for now
 url=makeNewUrl(song1)
 pageBytes=urllib.request.urlopen(urllib.request.Request(url,headers=header))
-page=pageBytes.read().decode("utf8")
+page=pageBytes.read().decode("utf8").split("\n")
 pageBytes.close()
-print(page[0])
+print(page[101])
