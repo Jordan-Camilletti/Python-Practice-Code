@@ -10,7 +10,6 @@ header={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML
 song1=input("Enter Song 1: ").lower()
 song2=""
 BPM=0
-#url="https://songbpm.com/space-oddity?q=Space%20Oddity%20"#Using this URL to test for now
 url="https://songbpm.com/"+(song1.lower().replace(" ","-"))
 pageBytes=urllib.request.urlopen(urllib.request.Request(url,headers=header))
 page=pageBytes.read().decode("utf8").split("\n")
