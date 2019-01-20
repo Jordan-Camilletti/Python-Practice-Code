@@ -1,3 +1,4 @@
+import re
 import webbrowser
 import urllib.request
 
@@ -13,5 +14,6 @@ BPM=0
 url="https://songbpm.com/"+(song1.lower().replace(" ","-"))
 pageBytes=urllib.request.urlopen(urllib.request.Request(url,headers=header))
 page=pageBytes.read().decode("utf8").split("\n")
+BPM=int(re.split('[<>]',page[101])[2])
 pageBytes.close()
-print(page[101])
+print(BPM)
