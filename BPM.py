@@ -8,12 +8,17 @@ header={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML
        'Accept-Encoding': 'none',
        'Accept-Language': 'en-US,en;q=0.8',
        'Connection': 'keep-alive'}
-song1=input("Enter Song 1: ").lower()
+song1=""
 song2=""
 BPM=0
-url="https://songbpm.com/"+(song1.lower().replace(" ","-"))
-pageBytes=urllib.request.urlopen(urllib.request.Request(url,headers=header))
-page=pageBytes.read().decode("utf8").split("\n")
-BPM=int(re.split('[<>]',page[101])[2])
+while(BPM==0):
+	song1=input("Enter Song 1: ").lower()
+	url="https://songbpm.com/"+(song1.lower().replace(" ","-"))
+	pageBytes=urllib.request.urlopen(urllib.request.Request(url,headers=header))
+	page=pageBytes.read().decode("utf8").split("\n")
+	try:
+		BPM=int(re.split('[<>]',page[101])[2])
+	except ValueError:
+		print("That song was not found.")
 pageBytes.close()
 print(BPM)
