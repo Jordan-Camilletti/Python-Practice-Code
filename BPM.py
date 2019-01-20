@@ -13,8 +13,8 @@ song2=""
 BPM=0
 while(BPM==0):
 	song1=input("Enter Song 1: ").lower()
-	url="https://songbpm.com/"+(song1.lower().replace(" ","-"))
-	pageBytes=urllib.request.urlopen(urllib.request.Request(url,headers=header))
+	url1="https://songbpm.com/"+(song1.lower().replace(" ","-"))
+	pageBytes=urllib.request.urlopen(urllib.request.Request(url1,headers=header))
 	page=pageBytes.read().decode("utf8").split("\n")
 	try:
 		BPM=int(re.split('[<>]',page[101])[2])
@@ -22,3 +22,4 @@ while(BPM==0):
 		print("That song was not found.")
 pageBytes.close()
 print(BPM)
+url2="https://www.bpmdatabase.com/music/search/?artist=&title=&bpm=+"+string(BPM)+"&genre="
