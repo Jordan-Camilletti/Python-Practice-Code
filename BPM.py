@@ -22,4 +22,10 @@ while(BPM==0):
 		print("That song was not found.")
 pageBytes.close()
 print(BPM)
-url2="https://www.bpmdatabase.com/music/search/?artist=&title=&bpm=+"+string(BPM)+"&genre="
+
+url2="https://www.bpmdatabase.com/music/search/?artist=&title=&bpm="+str(BPM)+"&genre="
+pageBytes=urllib.request.urlopen(urllib.request.Request(url2,headers=header))
+page=pageBytes.read().decode("utf8").split("\n")
+song2=re.split('[<>]',page[517])[2]
+print(song2)
+pageBytes.close()
