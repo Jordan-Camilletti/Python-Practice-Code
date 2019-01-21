@@ -22,11 +22,10 @@ while(BPM==0):
 	except ValueError:
 		print("That song was not found.")
 pageBytes.close()
-print(song1)
 
 url2="https://www.bpmdatabase.com/music/search/?artist=&title=&bpm="+str(BPM)+"&genre="
 pageBytes=urllib.request.urlopen(urllib.request.Request(url2,headers=header))
 page=pageBytes.read().decode("utf8").split("\n")
 song2=re.split('[<>]',page[517])[2]+" by "+re.split('[<>]', page[515])[4]
 pageBytes.close()
-print(song2)
+print(song1+"\n"+song2)
