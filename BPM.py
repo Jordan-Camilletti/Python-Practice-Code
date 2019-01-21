@@ -18,10 +18,11 @@ while(BPM==0):
 	page=pageBytes.read().decode("utf8").split("\n")
 	try:
 		BPM=int(re.split('[<>]',page[101])[2])
+		song1=page[88]+" by "+page[85]
 	except ValueError:
 		print("That song was not found.")
 pageBytes.close()
-print(BPM)
+print(song1)
 
 url2="https://www.bpmdatabase.com/music/search/?artist=&title=&bpm="+str(BPM)+"&genre="
 pageBytes=urllib.request.urlopen(urllib.request.Request(url2,headers=header))
