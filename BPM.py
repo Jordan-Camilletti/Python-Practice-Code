@@ -1,6 +1,6 @@
 import re
 import webbrowser
-from urllib.request import urlopen
+import urllib.request
 
 header={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -30,3 +30,5 @@ song2=re.split('[<>]',page[517])[2]+" by "+re.split('[<>]', page[515])[4]
 pageBytes.close()
 
 print(song1+"\n"+song2)
+webbrowser.open("www..com/"+song1)
+webbrowser.open("www..com/"+song2)
