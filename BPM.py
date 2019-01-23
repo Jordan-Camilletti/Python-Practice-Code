@@ -32,3 +32,5 @@ pageBytes.close()
 print(song1+"\n"+song2)
 webbrowser.open("www..com/"+song1)
 webbrowser.open("www..com/"+song2)
+#play song 1
+#play song 2
