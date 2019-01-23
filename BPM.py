@@ -30,7 +30,9 @@ song2=re.split('[<>]',page[517])[2]+" by "+re.split('[<>]', page[515])[4]
 pageBytes.close()
 
 print(song1+"\n"+song2)
+#TODO: fill this out
 webbrowser.open("www..com/"+song1)
 webbrowser.open("www..com/"+song2)
+#TODO:
 #play song 1
 #play song 2
