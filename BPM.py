@@ -31,8 +31,11 @@ pageBytes.close()
 
 print(song1+"\n"+song2)
 #TODO: fill this out
+print("X1X")
 webbrowser.open("https://www.youtube.com/results?search_query="+(song1).replace(" ","+"))
+print("X2X")
 webbrowser.open("https://www.youtube.com/results?search_query="+(song2).replace(" ","+"))
+print("X3X")
 #TODO:
 #play song 1
 #play song 2
