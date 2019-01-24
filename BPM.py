@@ -31,8 +31,8 @@ pageBytes.close()
 
 print(song1+"\n"+song2)
 #TODO: fill this out
-webbrowser.open("www..com/"+song1)
-webbrowser.open("www..com/"+song2)
+webbrowser.open("https://www.youtube.com/results?search_query="+(song1).replace(" ","+"))
+webbrowser.open("https://www.youtube.com/results?search_query="+(song2).replace(" ","+"))
 #TODO:
 #play song 1
 #play song 2
