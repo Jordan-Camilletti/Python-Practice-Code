@@ -35,6 +35,3 @@ webbrowser.open("https://www.youtube.com/results?search_query="+(song1).replace(
 print("X2X")
 webbrowser.open("https://www.youtube.com/results?search_query="+(song2).replace(" ","+"))
 print("X3X")
-#TODO:
-#play song 1
-#play song 2
