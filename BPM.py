@@ -11,22 +11,27 @@ header={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML
 song1=""
 song2=""
 BPM=0
-while(BPM==0):#Getting the 1st song
+while(BPM==0):
+	#Getting the 1st song
 	song1=input("Enter Song 1: ").lower()
 	url1="https://songbpm.com/"+(song1.lower().replace(" ","-"))
 	pageBytes=urllib.request.urlopen(urllib.request.Request(url1,headers=header))
 	page=pageBytes.read().decode("utf8").split("\n")
 	try:
-		BPM=int(re.split('[<>]',page[101])[2])#Getting the BPM of the 1st song
+		#Getting the BPM of the 1st song
+		BPM=int(re.split('[<>]',page[101])[2])
 		song1=page[88]+" by "+page[85]
 	except ValueError:
-		print("That song was not found.")#Song doesn't exist
+		#Song doesn't exist
+		print("That song was not found.")
 pageBytes.close()
 
-url2="https://www.bpmdatabase.com/music/search/?artist=&title=&bpm="+str(BPM)+"&genre="#Looking up 2nd song by BPM
+#Looking up 2nd song by BPM
+url2="https://www.bpmdatabase.com/music/search/?artist=&title=&bpm="+str(BPM)+"&genre="
 pageBytes=urllib.request.urlopen(urllib.request.Request(url2,headers=header))
 page=pageBytes.read().decode("utf8").split("\n")
-song2=re.split('[<>]',page[517])[2]+" by "+re.split('[<>]', page[515])[4]#Getting the BPM of the 2nd song
+#Getting the BPM of the 2nd song
+song2=re.split('[<>]',page[517])[2]+" by "+re.split('[<>]', page[515])[4]
 pageBytes.close()
 
 print(song1+"\n"+song2+"\nBPM: "+str(BPM))
