@@ -29,9 +29,7 @@ page=pageBytes.read().decode("utf8").split("\n")
 song2=re.split('[<>]',page[517])[2]+" by "+re.split('[<>]', page[515])[4]
 pageBytes.close()
 
-print(song1+"\n"+song2+"\nBPM: "+BPM)
-print("X1X")
+print(song1+"\n"+song2+"\nBPM: "+str(BPM))
 webbrowser.open("https://www.youtube.com/results?search_query="+(song1).replace(" ","+"))
-print("X2X")
 webbrowser.open("https://www.youtube.com/results?search_query="+(song2).replace(" ","+"))
-print("X3X")
+#TODO: Research YT's API
