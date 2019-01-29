@@ -1,8 +1,13 @@
 import re
-import json
-import requests
 import webbrowser
+import urllib.parse
 import urllib.request
+
+def getVid(search):#Credit for this function goes to Grant Curell
+	query_string = urllib.parse.urlencode({"search_query" : search})
+	html_content = urllib.request.urlopen("http://www.youtube.com/results?" + query_string)
+	search_results = re.findall(r'href=\"\/watch\?v=(.{11})', html_content.read().decode())
+	return("http://www.youtube.com/watch?v=" + search_results[0])
 
 header={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -38,6 +43,8 @@ pageBytes.close()
 
 #Showing both songs
 print(song1+"\n"+song2+"\nBPM: "+str(BPM))
+print(getVid(song1))
+print(getVid(song2))
 webbrowser.open("https://www.youtube.com/results?search_query="+(song1).replace(" ","+"))
 webbrowser.open("https://www.youtube.com/results?search_query="+(song2).replace(" ","+"))
 #TODO: Research YT's API
