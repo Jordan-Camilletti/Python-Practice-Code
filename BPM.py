@@ -34,11 +34,11 @@ while(BPM==0):
 pageBytes.close()
 
 #Looking up 2nd song by BPM
-url2="https://www.bpmdatabase.com/music/search/?artist=&title=&bpm="+str(BPM)+"&genre="
+url2="https://jog.fm/popular-workout-songs?bpm="+str(BPM)
 pageBytes=urllib.request.urlopen(urllib.request.Request(url2,headers=header))
 page=pageBytes.read().decode("utf8").split("\n")
 #Getting the BPM of the 2nd song
-song2=re.split('[<>]',page[517])[2]+" by "+re.split('[<>]', page[515])[4]
+song2=re.split('[<>]',page[526])[4]+" by "+re.split('[<>]', page[525])[4]
 pageBytes.close()
 
 #Showing both songs
