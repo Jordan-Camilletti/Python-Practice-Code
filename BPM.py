@@ -45,3 +45,4 @@ pageBytes.close()
 print(song1+"\n"+song2+"\nBPM: "+str(BPM))
 webbrowser.open(getVid(song1))
 webbrowser.open(getVid(song2))
+#TODO: add instrumental/vocal options
