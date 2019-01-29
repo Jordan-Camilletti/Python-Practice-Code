@@ -30,7 +30,7 @@ while(BPM==0):
 		song1=page[88]+" by "+page[85]
 	except ValueError:
 		#Song doesn't exist
-		print("That song was not found.")
+		print("That song's BPM was not found.")
 pageBytes.close()
 
 #Looking up 2nd song by BPM
@@ -45,4 +45,3 @@ pageBytes.close()
 print(song1+"\n"+song2+"\nBPM: "+str(BPM))
 webbrowser.open(getVid(song1))
 webbrowser.open(getVid(song2))
-#TODO: Research YT's API
