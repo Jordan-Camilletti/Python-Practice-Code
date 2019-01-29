@@ -43,8 +43,6 @@ pageBytes.close()
 
 #Showing both songs
 print(song1+"\n"+song2+"\nBPM: "+str(BPM))
-print(getVid(song1))
-print(getVid(song2))
-webbrowser.open("https://www.youtube.com/results?search_query="+(song1).replace(" ","+"))
-webbrowser.open("https://www.youtube.com/results?search_query="+(song2).replace(" ","+"))
+webbrowser.open(getVid(song1))
+webbrowser.open(getVid(song2))
 #TODO: Research YT's API
