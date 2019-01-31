@@ -43,7 +43,7 @@ song2=re.split('[<>]',page[526])[4]+" by "+re.split('[<>]', page[525])[4]
 pageBytes.close()
 
 #Showing both songs
-while(vocalChoice!=1 && vocalChoice!=2):
+while(vocalChoice!=1 and vocalChoice!=2):
 	print("Song 1: "song1+"\nSong 2: "+song2+"\nBPM: "+str(BPM)+"Which song do you want vocals for?")
 vocalChoice=input()
 if(vocalChoice==1):
