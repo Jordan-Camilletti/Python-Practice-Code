@@ -17,6 +17,7 @@ header={'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML
        'Connection': 'keep-alive'}
 song1=""
 song2=""
+vocalChoice=0
 BPM=0
 while(BPM==0):
 	#Getting the 1st song
@@ -42,7 +43,7 @@ song2=re.split('[<>]',page[526])[4]+" by "+re.split('[<>]', page[525])[4]
 pageBytes.close()
 
 #Showing both songs
-print(song1+"\n"+song2+"\nBPM: "+str(BPM))
+print("Song 1: "song1+"\nSong 2: "+song2+"\nBPM: "+str(BPM))
 webbrowser.open(getVid(song1))
 webbrowser.open(getVid(song2))
 #TODO: add instrumental/vocal options
