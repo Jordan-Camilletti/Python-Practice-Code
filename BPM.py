@@ -47,8 +47,8 @@ while(vocalChoice!=1 && vocalChoice!=2):
 	print("Song 1: "song1+"\nSong 2: "+song2+"\nBPM: "+str(BPM)+"Which song do you want vocals for?")
 vocalChoice=input()
 if(vocalChoice==1):
-	webbrowser.open(getVid(song1))#Vocals
-	webbrowser.open(getVid(song2))
+	webbrowser.open(getVid(song1+" vocals"))#Vocals
+	webbrowser.open(getVid(song2+" instrumentals"))#Instrumentals
 else:
-	webbrowser.open(getVid(song1))
-	webbrowser.open(getVid(song2))#Vocals
+	webbrowser.open(getVid(song1+" instrumentals"))#Instrumentals
+	webbrowser.open(getVid(song2+" vocals"))#Vocals
