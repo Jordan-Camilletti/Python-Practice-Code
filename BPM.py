@@ -39,12 +39,12 @@ url2="https://jog.fm/popular-workout-songs?bpm="+str(BPM)
 pageBytes=urllib.request.urlopen(urllib.request.Request(url2,headers=header))
 page=pageBytes.read().decode("utf8").split("\n")
 #Getting the BPM of the 2nd song
-song2=re.split('[<>]',page[526])[4]+" by "+re.split('[<>]', page[525])[4]
+song2=re.split('[<>]',page[528])[4]+" by "+re.split('[<>]', page[527])[4]
 pageBytes.close()
 
 #Showing both songs
 while(vocalChoice!=1 and vocalChoice!=2):
-	print("Song 1: "song1+"\nSong 2: "+song2+"\nBPM: "+str(BPM)+"Which song do you want vocals for?")
+	print("Song 1: "+song1+"\nSong 2: "+song2+"\nBPM: "+str(BPM)+"Which song do you want vocals for?")
 vocalChoice=input()
 if(vocalChoice==1):
 	webbrowser.open(getVid(song1+" vocals"))#Vocals
